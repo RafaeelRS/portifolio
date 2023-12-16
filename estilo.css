@@ -12,30 +12,41 @@
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
     height: 250px;
     background-color: rgb(18, 31, 44);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Amatic SC';
     color: white;
 }
 
-nav {
-    align-self: self-end;
-    padding: 10px;
+.tomato {
+    font-size: 2.7rem;
+    color: tomato;
+    font-family: Roboto;
 }
 
-header > a{
+nav {
+    align-self: self-end;
+    margin-top: 30px;
+    padding: 15px;
+
+}
+
+header > a {
     align-self: self-start;
-    padding: 10px;
-    width: 50px;
+    padding: 18px;
+}
+
+#logo {
+    display: inline;
+    max-width: 35px;
 }
 
 #itens-menu {
@@ -44,11 +55,73 @@ header > a{
 
 #menu li {
     list-style-type: none;
-    margin-left: 10px;
+    margin-left: 40px;
 }
-
-#menu a {
+nav a {
+    font-size: 1.1rem;
     font-family: Roboto;
     text-decoration: none;
     color: white;
+}
+
+nav a:hover {
+    color: tomato;
+}
+
+main {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: auto;
+}
+
+div {
+    display: block;
+    margin: auto;
+    max-width: 320px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+main > a {
+    display: block;
+    padding: 15px;
+    flex: 1 1 320px;
+}
+
+a > p {
+    text-align: center;
+}
+
+#d1 {
+    background-image: url("imgs/raposa1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#d2 {
+    background: black url("imgs/raposa-dormindo.jpg") bottom center no-repeat;
+    background-size: cover;
+}
+
+#d3 {
+    background: black url("imgs/serpente-colorida.jpg") bottom center no-repeat;
+    background-size: cover;
+}
+
+#d4 {
+    background: black url("imgs/serpente.jpg") bottom center no-repeat;
+    background-size: cover;
+}
+
+#d5 {
+    background: black url("imgs/coiote.jpg") bottom center no-repeat;
+    background-size: cover;
+}
+
+#d6 {
+    background: black url("imgs/alcateia-lobo.jpg") bottom center no-repeat;
+    background-size: cover;
 }
