@@ -69,11 +69,12 @@ nav a:hover {
 }
 
 main {
-    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     max-width: 980px;
+    padding-top: 50px;
     margin: auto;
+    font-family: Roboto;
 }
 
 div {
@@ -84,6 +85,11 @@ div {
     border-radius: 8px;
 }
 
+main > a > div:hover {
+    transform: scale(1.01);
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
 main > a {
     display: block;
     padding: 15px;
@@ -91,7 +97,14 @@ main > a {
 }
 
 a > p {
+    color: black;
+    font-weight: 800;
     text-align: center;
+    padding: 10px;
+}
+
+a > p:hover {
+    color: tomato;
 }
 
 #d1 {
@@ -99,29 +112,35 @@ a > p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.273);
 }
 
 #d2 {
     background: black url("imgs/raposa-dormindo.jpg") bottom center no-repeat;
     background-size: cover;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.577);
 }
 
 #d3 {
     background: black url("imgs/serpente-colorida.jpg") bottom center no-repeat;
     background-size: cover;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.249);
 }
 
 #d4 {
     background: black url("imgs/serpente.jpg") bottom center no-repeat;
     background-size: cover;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.447);
 }
 
 #d5 {
     background: black url("imgs/coiote.jpg") bottom center no-repeat;
     background-size: cover;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.403);
 }
 
 #d6 {
     background: black url("imgs/alcateia-lobo.jpg") bottom center no-repeat;
     background-size: cover;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.577);
 }
